@@ -1,0 +1,102 @@
+
+<header>
+    <div class="left" onclick="javascript:history.go(-1);">
+        <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left.6f6409e"></use>
+        </svg>
+    </div>
+    <p class="center">美食</p>
+</header>
+
+<aside>
+    <div class="filter-header">
+        <a href="javascript:;" class="filter-nav">
+            <span>美食</span>
+            <svg viewBox="0 0 72 32"><path d="M36 32l36-32h-72z"></path></svg>
+        </a>
+        <a href="javascript:;" class="filter-nav">
+            <span>排序</span>
+            <svg viewBox="0 0 72 32"><path d="M36 32l36-32h-72z"></path></svg>
+        </a>
+        <a href="javascript:;" class="filter-nav">
+            <span>筛选</span>
+            <svg viewBox="0 0 72 32"><path d="M36 32l36-32h-72z"></path></svg>
+        </a>
+    </div>
+</aside>
+
+<div id="wrap">
+
+    <section ng-repeat="i in data3">
+        <div class="rb-logo">
+            <div class="logo-container">
+                <img ng-src="https://fuss10.elemecdn.com/{{i.image_path}}?imageMogr/format/webp/" alt="">
+            </div>
+        </div>
+        <div class="rb-info">
+            <section class="bigTitle">
+                <p class="left premium"> {{i.name}}</p>
+                <p class="right">
+                    <i ng-repeat="j in i.supports">{{j.icon_name}}</i>
+                </p>
+            </section>
+            <section class="score">
+                <div class="left">
+                    <div class="rating-stars">
+                        <div class="rating-max">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                        </div>
+                        <div class="rating-percentage">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="rating-rate">{{i.rating}}</span>
+                    <span>月售{{i.recent_order_num}}单</span>
+                </div>
+                <div class="right">
+                    <span class="deliveryTime" ng-if="i.supports[2].name">{{i.supports[2].name}}</span>
+                    <span class="deliveryMode" ng-if="i.delivery_mode.text">{{i.delivery_mode.text}}</span>
+                </div>
+            </section>
+            <section class="priceTime">
+                <div class="left">
+                    <span>¥{{i.float_minimum_order_amount}}起送</span>
+                    <span> {{i.piecewise_agent_fee.tips}}</span>
+                </div>
+                <div class="right">
+                    <span>{{i.distance}}m</span>
+                    <span> {{i.order_lead_time}}分钟</span>
+                </div>
+            </section>
+        </div>
+    </section>
+
+</div>

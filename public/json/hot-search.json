@@ -1,0 +1,92 @@
+[
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=553889&target_food_id=0",
+        "search_word": "麦当劳",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "麦当劳"
+    },
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=359850&target_food_id=0",
+        "search_word": "棒约翰",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "棒约翰"
+    },
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=135394&target_food_id=0",
+        "search_word": "汉堡王",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "汉堡王"
+    },
+    {
+        "is_highlight": 0,
+        "link": "",
+        "search_word": "鸡排",
+        "source": "3",
+        "type": 1,
+        "url": "",
+        "word": "鸡排"
+    },
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=270439&target_food_id=0",
+        "search_word": "避风塘",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "避风塘"
+    },
+    {
+        "is_highlight": 0,
+        "link": "",
+        "search_word": "披萨",
+        "source": "3",
+        "type": 1,
+        "url": "",
+        "word": "披萨"
+    },
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=723475&target_food_id=0",
+        "search_word": "米有沙拉",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "米有沙拉"
+    },
+    {
+        "is_highlight": 0,
+        "link": "",
+        "search_word": "麻辣香锅",
+        "source": "3",
+        "type": 1,
+        "url": "",
+        "word": "麻辣香锅"
+    },
+    {
+        "is_highlight": 0,
+        "link": "eleme://restaurant?restaurant_id=473579&target_food_id=0",
+        "search_word": "果之满满",
+        "source": "3",
+        "type": 2,
+        "url": "",
+        "word": "果之满满"
+    },
+    {
+        "is_highlight": 0,
+        "link": "",
+        "search_word": "重庆小面",
+        "source": "3",
+        "type": 1,
+        "url": "",
+        "word": "重庆小面"
+    }
+]

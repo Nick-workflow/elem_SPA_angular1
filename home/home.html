@@ -1,0 +1,127 @@
+
+<div id="wrap">
+    <header>
+        <div class="home-top">
+            <div class="home-topLeft">
+                <svg class="local">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#location"></use>
+                </svg>
+                <p>黄浦区人民大道上海市政府上海市委</p>
+                <svg class="arrowDown">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                </svg>
+            </div>
+            <div class="home-topRight">
+                <div class="weatherInfo">
+                    <p>17°</p>
+                    <p>晴天</p>
+                </div>
+                <img src="public/img/sun.webp" alt=""/>
+            </div>
+        </div>
+        <form action="">
+            <input type="text" placeholder="搜索商家、商品">
+        </form>
+        <div class="home-bottom">
+            <a href="javascript:;" ng-repeat="i in data1">
+                {{i.search_word}}
+            </a>
+        </div>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#deliciousFood" ng-repeat="i in data2 | limitTo : 8 ">
+                    <img ng-src="https://fuss10.elemecdn.com{{i.image_url}}?imageMogr/format/webp/" alt="">
+                    <p>{{i.title}}</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" ng-repeat="i in data2 | limitTo : -8">
+                    <img ng-src="https://fuss10.elemecdn.com{{i.image_url}}?imageMogr/format/webp/" alt="">
+                    <p>{{i.title}}</p>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="recommended-business">
+        <p class="rb-title">推荐商家</p>
+        <div class="rb-list">
+            <section ng-repeat="i in data3" ui-sref="/shopDetails">
+                <div class="rb-logo">
+                    <div class="logo-container">
+                        <img ng-src="https://fuss10.elemecdn.com/{{i.image_path}}?imageMogr/format/webp/" alt="">
+                    </div>
+                </div>
+                <div class="rb-info">
+                    <section class="bigTitle">
+                        <p class="left premium"> {{i.name}}</p>
+                        <p class="right">
+                            <i ng-repeat="j in i.supports">{{j.icon_name}}</i>
+                        </p>
+                    </section>
+                    <section class="score">
+                        <div class="left">
+                            <div class="rating-stars">
+                                <div class="rating-max">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                </div>
+                                <div class="rating-percentage">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rating-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="rating-rate">{{i.rating}}</span>
+                            <span>月售{{i.recent_order_num}}单</span>
+                        </div>
+                        <div class="right">
+                            <span class="deliveryTime" ng-if="i.supports[2].name">{{i.supports[2].name}}</span>
+                            <span class="deliveryMode" ng-if="i.delivery_mode.text">{{i.delivery_mode.text}}</span>
+                        </div>
+                    </section>
+                    <section class="priceTime">
+                        <div class="left">
+                            <span>¥{{i.float_minimum_order_amount}}起送</span>
+                            <span> {{i.piecewise_agent_fee.tips}}</span>
+                        </div>
+                        <div class="right">
+                            <span>{{i.distance}}m</span>
+                            <span> {{i.order_lead_time}}分钟</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>

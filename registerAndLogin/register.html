@@ -1,0 +1,17 @@
+
+<form class="register">
+    <section class="passwordRegister">
+        <input type="text" id="name" placeholder="手机/邮箱/用户名">
+    </section>
+    <section class="passwordRegister">
+        <input ng-attr-type="{{type}}" id="pwd" placeholder="密码">
+        <div class="switchButton"  ng-class="{'switchLeft': isSwith,'switchRight': !isSwith}" ng-click="switch()">
+            <div class="switchButton-dot"></div>
+            <span class="switchButton-right">abc</span>
+            <span class="switchButton-left">···</span>
+        </div>
+    </section>
+</form>
+<button class="registerButton" ng-click="register()">注册</button>
+
+

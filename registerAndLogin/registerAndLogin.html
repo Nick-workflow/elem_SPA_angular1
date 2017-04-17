@@ -1,0 +1,25 @@
+<header>
+    <div class="left" onclick="javascript:history.go(-1);">
+        <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left.6f6409e"></use>
+        </svg>
+    </div>
+    <p class="center"  ng-class="{'active': isActive}">
+       <span>密码登录</span>
+        <span>注册</span>
+    </p>
+    <div class="right" ng-class="{'active': isActive}" ng-click="toggleClass()">
+        <span ui-sref="/registerAndLogin.login" >密码登录</span>
+        <span ui-sref="/registerAndLogin.register" >注册</span>
+    </div>
+</header>
+
+<main ui-view="RALView">
+
+</main>
+
+<div class="foot">
+    <span>关于我们</span>
+</div>
+
+<div class="ifFail hidden"></div>

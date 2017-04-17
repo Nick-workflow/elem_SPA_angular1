@@ -1,0 +1,220 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.173333rem;
+    color: #fff;
+    font-size: .48rem;
+    background: rgb(0, 151, 255);
+}
+header .left{
+    width: 1.173333rem;
+    height: 1.173333rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .left svg{
+    display: block;
+    width: .586667rem;
+    height: .586667rem;
+}
+header .center{
+    width: 2.2rem;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.173333rem;
+    margin-left: 10%;
+}
+header .center span{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .center span:nth-child(2){
+    display: none;
+}
+header .center.active span:nth-child(1){
+    display: none;
+}
+header .center.active span:nth-child(2){
+    display: flex;
+}
+header .right{
+    width: 2.2rem;
+    height: 100%;
+    font-size: 0.4rem;
+}
+header .right span{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .right span:nth-child(1){
+    display: none;
+}
+header .right.active span:nth-child(2){
+    display: none;
+}
+header .right.active span:nth-child(1){
+    display: flex;
+}
+
+main{
+    position: absolute;
+    top: 1.173333rem;
+    bottom: 1.652rem;
+    left: 0;
+    right: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 0.4rem;
+}
+main .login,main .register{
+    border-top: 1px solid #ddd;
+}
+main .login .passwordLogin,main .register .passwordRegister{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.426667rem;
+    height: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    font-size: 0.4rem;
+}
+main .login .passwordLogin input,main .register .passwordRegister input{
+    flex-grow: 1;
+    padding: 0.133333rem 0;
+    height: 0.8rem;
+    color: #333;
+    line-height: 0.533333rem;
+}
+main .login .passwordLogin input::-webkit-input-placeholder {
+    color: #d1d1d1;
+}
+main .register .passwordRegister input::-webkit-input-placeholder {
+    color: #d1d1d1;
+}
+main .login .passwordLogin .switchButton,main .register .passwordRegister .switchButton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0.08rem;
+    width: 1rem;
+    height: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    transition: background-color .3s, border-color .3s;
+}
+main .login .passwordLogin .switchLeft,main .register .passwordRegister .switchLeft{
+    justify-content: flex-end;
+}
+main .login .passwordLogin .switchRight,main .register .passwordRegister .switchRight{
+    justify-content: flex-start;
+    border-color: #3190e8;
+    background: #3190e8;
+}
+main .login .passwordLogin .switchButton .switchButton-dot,main .register .passwordRegister .switchButton .switchButton-dot{
+    position: absolute;
+    top: -0.026667rem;
+    left: -0.026667rem;
+    width: 0.453333rem;
+    height: 0.453333rem;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0.026667rem 0.053333rem 0 rgba(0, 0, 0, .1);
+    transition: transform .3s, -webkit-transform .3s;
+}
+main .login .passwordLogin .switchButton.switchRight .switchButton-dot,main .register .passwordRegister .switchButton.switchRight .switchButton-dot{
+    transform: translate3d(0.626667rem, 0, 0);
+}
+main .login .passwordLogin .switchButton .switchButton-right,main .register .passwordRegister .switchButton .switchButton-right{
+    font-size: 0.266667rem;
+    color: #fff;
+}
+main .login .passwordLogin .switchLeft .switchButton-right,main .register .passwordRegister .switchLeft .switchButton-right{
+    display: none;
+}
+main .login .passwordLogin .switchButton .switchButton-left,main .register .passwordRegister .switchButton .switchButton-left{
+    font-size: 0.373333rem;
+    color: #333;
+}
+main .login .passwordLogin .switchRight .switchButton-left,main .register .passwordRegister .switchRight .switchButton-left{
+    display: none;
+}
+main .loginButton,main .registerButton{
+    margin: 0.4rem auto;
+    display: block;
+    padding: 0;
+    width: 9.2rem;
+    height: 1.173333rem;
+    border-radius: 0.053333rem;
+    background: #4cd964;
+    color: #fff;
+    text-align: center;
+    font-size: 0.426667rem;
+    line-height: 1.173333rem;
+}
+main .state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: red;
+    margin: 3rem auto 0;
+}
+
+.foot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0.533333rem auto;
+}
+.foot span{
+    padding: 0 0.133333rem;
+    color: #999;
+    font-size: 0.32rem;
+    line-height: 0.586667rem;
+}
+
+.ifFail{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    z-index: 6666;
+    padding: 0.133333rem 0.266667rem;
+    border-radius: 0.053333rem;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-size: 0.32rem;
+    transition: opacity .2s;
+    transform: translateX(-50%);
+}
+.hidden{
+    display: none;
+}
+
+
+footer{
+    display: none;
+}

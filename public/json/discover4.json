@@ -1,0 +1,36 @@
+[
+    {
+        "avatar": "",
+        "follows": 0,
+        "foods": [
+            {
+                "amount": 1,
+                "food_id": 548784448,
+                "food_name": "梅干菜扣肉-中份",
+                "image_hash": "1222e23307af08efd8a8ad4dd595e6a5jpeg"
+            },
+            {
+                "amount": 1,
+                "food_id": 548788222,
+                "food_name": "酱爆猪肝",
+                "image_hash": "70264930e93d1303fd4b0f376115792bjpeg"
+            },
+            {
+                "amount": 2,
+                "food_id": 548780630,
+                "food_name": "米饭",
+                "image_hash": "ccf354a88f7ac3f5509dac5423da2ab2jpeg"
+            }
+        ],
+        "id": "1203093552807006396",
+        "nickname": "U***R",
+        "ordered_day": 1,
+        "rating_text": "味道真不错，值得推荐",
+        "restaurant_id": 150141037,
+        "restaurant_month_sale": 229,
+        "restaurant_name": "幸福餐厅（虹口店）",
+        "restaurant_rating_score": 4.2,
+        "total_fee": 37.5,
+        "user_label": 1
+    }
+]

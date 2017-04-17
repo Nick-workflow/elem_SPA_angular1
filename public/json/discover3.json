@@ -1,0 +1,32 @@
+[
+    {
+        "discount_rate": 0.2,
+        "food_id": 134467119,
+        "food_name": "杂粮粥",
+        "image_hash": "9405e9ae81627cbd297b8f0fc14f1617jpeg",
+        "original_price": 15,
+        "price": 3,
+        "restaurant_id": 542592,
+        "restaurant_name": "517快餐"
+    },
+    {
+        "discount_rate": 0.2,
+        "food_id": 134467580,
+        "food_name": "明火白粥",
+        "image_hash": "b55a682c373612025b358a63e132977bjpeg",
+        "original_price": 15,
+        "price": 3,
+        "restaurant_id": 542592,
+        "restaurant_name": "517快餐"
+    },
+    {
+        "discount_rate": 0.2,
+        "food_id": 174163263,
+        "food_name": "陕西肉夹馍",
+        "image_hash": "96a470573002dc2ca75405e6d221cbb9jpeg",
+        "original_price": 10,
+        "price": 2,
+        "restaurant_id": 1777361,
+        "restaurant_name": "老上海咸泡饭"
+    }
+]

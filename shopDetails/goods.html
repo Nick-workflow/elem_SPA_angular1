@@ -1,0 +1,95 @@
+<main class="menuView">
+    <ul class="menuCategory">
+        <li class="menuList" ng-repeat="i in data2" anchor="{{i.id}}" ng-click="menuTab()">
+            <img ng-if="i.icon_url" ng-src="https://fuss10.elemecdn.com/{{i.icon_url}}.jpeg" alt="">
+            <span>{{i.name}}</span>
+        </li>
+    </ul>
+    <section class="menuDetails">
+        <dl class="menuItems" ng-repeat="i in data2" id="{{i.id}}">
+            <dt>
+                <div class="category-title">
+                    <strong class="category-name">{{i.name}}</strong>
+                    <span class="category-description">{{i.description}}</span>
+                </div>
+                <div class="category-more">
+                    <span class="icon"></span>
+                </div>
+            </dt>
+            <dd ng-repeat="j in i.foods">
+                <span class="foodimg">
+                    <img ng-src="{{j.image_path}}" alt="">
+                </span>
+                <section class="foodInfo">
+                    <div class="foodTitle">{{j.name}}</div>
+                    <p class="foodDescription" ng-if="j.description">{{j.description}}</p>
+                    <p class="foodSales">
+                        <span>月售{{j.month_sales}}份</span>
+                        <span>好评率{{j.satisfy_rate}}%</span>
+                    </p>
+                    <strong class="foodPrice">{{j.specfoods[0].price}}</strong>
+                    <div class="carButton">
+                        <a href="javascript:;" ng-click="subCar(j.specfoods[0])" ng-if="this.carData[j.specfoods[0].food_id].num">
+                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-add"></use></svg>
+                        </a>
+                        <span class="num" ng-if="this.carData[j.specfoods[0].food_id].num">{{carData[j.specfoods[0].food_id].num}}</span>
+                        <a href="javascript:;" ng-click="addCar(j.specfoods[0])">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-minus"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+            </dd>
+        </dl>
+    </section>
+</main>
+
+
+
+<div class="shoppingCar" >
+    <div class="shoppingDetails" ng-if="carBc && isEmpty" >
+        <div class="carTop">
+            <span class="left">购物车</span>
+            <a href="javascript:;" class="right" ng-click="removeAll()">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-remove"></use>
+                </svg>
+                <span>清空</span>
+            </a>
+        </div>
+        <div class="carItems">
+            <ul>
+                <li ng-repeat="i in carData">
+                    <div class="name">
+                        <em>{{i.name}}</em>
+                    </div>
+                    <div class="price">{{i.price}}</div>
+                    <div class="change">
+                        <div class="addOrSub">
+                            <a href="javascript:;" ng-click="subCar(i)">
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-add"></use>
+                                </svg>
+                            </a>
+                            <span class="num">{{i.num}}</span>
+                            <a href="javascript:;" ng-click="addCar(i)">
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-minus"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="initial" ng-click="show()">
+        <span class="car numberHide" attr-quantity="{{carNum}}"></span>
+        <div>
+            <p>¥{{carSum}}</p>
+            <p>配送费¥{{data1.float_delivery_fee}}</p>
+        </div>
+        <a href="javascript:;" class="empty">去结算</a>
+    </div>
+</div>

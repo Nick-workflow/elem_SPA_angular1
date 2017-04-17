@@ -1,0 +1,96 @@
+{
+    "activities": [
+        {
+            "description": "新用户下单立减20.0元(不与其它活动同享)",
+            "icon_color": "70bc46",
+            "icon_name": "新",
+            "id": 21838002,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减20.0元(不与其它活动同享)"
+        },
+        {
+            "attribute": "{\"45\": {\"1\": 6, \"0\": 0}, \"85\": {\"1\": 15, \"0\": 0}}",
+            "description": "满45减6，满85减15(不与美食活动同享)（限在线支付）",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 22520491,
+            "is_exclusive_with_food_activity": true,
+            "name": "满减优惠",
+            "tips": "满45减6，满85减15(不与美食活动同享)（限在线支付）",
+            "type": 102
+        }
+    ],
+    "address": "上海市南京西路388号首层B室、二层A，B室",
+    "description": "",
+    "distance": 469,
+    "float_delivery_fee": 9,
+    "float_minimum_order_amount": 0,
+    "id": 553889,
+    "identification": {
+        "business_scope": "",
+        "company_name": "上海麦当劳食品有限公司仙乐斯餐厅",
+        "identificate_agency": "",
+        "identificate_date": "2016-01-01T00:04:00+0800",
+        "identificate_result": 1,
+        "legal_person": "",
+        "licenses_date": "",
+        "licenses_number": "沪餐证字2010310101030241",
+        "licenses_scope": "",
+        "operation_period": "",
+        "redirect_identification_url": "http://m.ele.me/shop/553889/info/auth",
+        "registered_address": "南京西路388号首层B室、二层A、B室",
+        "registered_number": "",
+        "type": 1
+    },
+    "image_path": "18956d597e004abf8d30365009c4492bjpeg",
+    "is_new": false,
+    "is_premium": true,
+    "is_stock_empty": 0,
+    "latitude": 31.2314256205894,
+    "license": {
+        "business_license_image": "2e73e06eda5c7b5da00ffc8732fa9b3cjpeg",
+        "catering_service_license_image": "ac0232377cef6f0862e1cbce9c728b73jpeg",
+        "service_license_business_scope": "",
+        "service_license_register_authority": "",
+        "service_license_register_date": "1970-01-01"
+    },
+    "longitude": 121.468923973281,
+    "max_applied_quantity_per_order": -1,
+    "name": "上海麦当劳仙乐斯餐厅",
+    "next_business_time": "",
+    "only_use_poi": false,
+    "opening_hours": [
+        "00:00/04:45",
+        "05:15/10:15",
+        "10:30/23:00"
+    ],
+    "order_lead_time": 29,
+    "phone": "4000517117",
+    "piecewise_agent_fee": {
+        "description": "配送费¥9",
+        "extra_fee": 0,
+        "is_extra": false,
+        "rules": [
+            {
+                "fee": 9,
+                "price": 0
+            }
+        ],
+        "tips": "配送费¥9"
+    },
+    "promotion_info": "",
+    "rating": 4.7,
+    "rating_count": 306,
+    "recent_order_num": 1292,
+    "regular_customer_count": 0,
+    "status": 1,
+    "supports": [
+        {
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+/* 重置样式 */
+*, :after, :before {
+	box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body , ul , figure , li , ol , p , h1 , h2 , h3 , h4 , h5 , h6 , dl , dd , dt {
+	margin: 0;
+	padding: 0;
+}
+
+p , h1 , h2 , h3 , h4 , h5 , h6{
+	font-weight: 400;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul , li , ol {
+	list-style: none;
+}
+
+html {
+	height: 100%;
+	font-family: Helvetica Neue,Tahoma,Arial,PingFangSC-Regular,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	box-sizing: border-box;
+}
+body{
+	height: 100%;
+}
+
+img{
+	display: block;
+	transform: scale(1,1);
+}
+
+button, input, select, textarea {
+	outline: none;
+	border: none;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.clearFix:after{
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	zoom: 1;
+	visibility: hidden;
+}

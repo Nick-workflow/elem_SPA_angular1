@@ -1,0 +1,150 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.173333rem;
+    color: #fff;
+    font-size: .48rem;
+    background: rgb(0, 151, 255);
+}
+header .left{
+    width: 1.173333rem;
+    height: 1.173333rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .left svg{
+    display: block;
+    width: .586667rem;
+    height: .586667rem;
+}
+header .center{
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.173333rem;
+    margin-right: 45%;
+}
+
+#wrap{
+    position: absolute;
+    top: 1.173333rem;
+    left: 0;
+    right: 0;
+    bottom: 1.333333rem;
+    overflow: auto;
+}
+
+section:nth-child(1) .profile{
+    display: flex;
+    align-items: center;
+    background: #0097ff;
+    padding: 0.666667rem 0.4rem;
+    color: #fff;
+}
+section:nth-child(1) .profile .left{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: #fff;
+}
+section:nth-child(1) .profile .left svg{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+section:nth-child(1) .profile .center{
+    flex-grow: 1;
+    margin-left: 0.48rem;
+}
+section:nth-child(1) .profile .center p{
+    margin-bottom: 0.053333rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+section:nth-child(1) .profile .center p:nth-child(1){
+    font-size: 0.586667rem;
+}
+section:nth-child(1) .profile .center p:nth-child(2){
+    display: flex;
+    align-items: center;
+    font-size: 0.373333rem;
+}
+section:nth-child(1) .profile .center p:nth-child(2) svg{
+    margin-right: 0.066667rem;
+    width: 0.426667rem;
+    height: 0.426667rem;
+}
+section:nth-child(1) .profile .right svg{
+    width: 0.266667rem;
+    height: 0.56rem;
+}
+section:nth-child(1) .personal{
+    display: flex;
+    width: 100%;
+    height: 2.24rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+section:nth-child(1) .personal a{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section:nth-child(1) .personal a:not(last-child){
+    border-right: 1px solid #ddd;
+}
+section:nth-child(1) .personal a svg{
+    width: 0.693333rem;
+    height: 0.693333rem;
+}
+section:nth-child(1) .personal a p{
+    margin-top: 0.133333rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: #666;
+}
+
+section:nth-child(n+2){
+    margin-top: 0.266667rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.453333rem;
+    background: #fff;
+    line-height: 0.453333rem;
+}
+section:nth-child(n+2) a{
+    display: flex;
+    align-items: center;
+    padding-left: 0.666667rem;
+}
+section:nth-child(n+2) a aside{
+    margin-left: -0.266667rem;
+    margin-right: 0.266667rem;
+}
+section:nth-child(n+2) a aside svg{
+    width: 0.48rem;
+    height: 0.48rem;
+}
+section:nth-child(n+2) a:not(last-chid) p{
+    border-bottom: 1px solid #ddd;
+}
+section:nth-child(n+2) a p{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.333333rem 0.266667rem 0.333333rem 0;
+}
+section:nth-child(n+2) a p span svg{
+    width: 0.266667rem;
+    height: 0.266667rem;
+    fill: #bbb;
+}
